@@ -1,0 +1,16 @@
+{
+  "gltf_transform": "4.5.0",
+  "candidate": "meshopt_direct_preserve_uv",
+  "files": {
+    "raw": {
+      "name": "aster_no01_cpb4_raw.glb",
+      "bytes": 1091916,
+      "sha256": "e30e4c13d8be5516e8437080d05b46a3c51bfc4fea06233f19e7723443c79a1f"
+    },
+    "meshopt_uv": {
+      "name": "aster_no01_cpb4_meshopt_uv.glb",
+      "bytes": 270360,
+      "sha256": "26671ceecd1fb678a7382d0d73d35c018fda15bc331b5b29afd2c0e41f52c0cd"
+    }
+  }
+}
