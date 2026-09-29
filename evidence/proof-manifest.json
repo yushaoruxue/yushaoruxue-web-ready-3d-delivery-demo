@@ -1,0 +1,20 @@
+{
+  "classification": "Synthetic internal benchmark, not a client case.",
+  "source_asset": {
+    "bytes": 1091916,
+    "sha256": "e30e4c13d8be5516e8437080d05b46a3c51bfc4fea06233f19e7723443c79a1f"
+  },
+  "accepted_web_asset": {
+    "bytes": 270360,
+    "sha256": "26671ceecd1fb678a7382d0d73d35c018fda15bc331b5b29afd2c0e41f52c0cd"
+  },
+  "rejected_smaller_candidate": {
+    "bytes": 181616,
+    "reason": "Browser visual regression: polished metal cap became materially flatter/greyer after UV attributes were removed."
+  },
+  "accepted_reduction_percent": 75.24,
+  "accepted_size_ratio": 4.04,
+  "nodes_preserved": "9/9",
+  "validator": "0 errors / 0 warnings on raw and accepted optimized GLB",
+  "browser": "Both raw and accepted optimized GLBs loaded and reached capture-ready in the pinned model-viewer + Meshopt runtime."
+}
