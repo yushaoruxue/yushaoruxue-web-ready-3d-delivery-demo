@@ -1,20 +1,20 @@
 {
   "raw_browser": {
     "path": "assets/raw-browser.jpg",
-    "bytes": 6243,
-    "sha256": "8daec45f044cc0d4c21668107a76e884d0873a9827f440e78abfc8ecc9b33f84",
-    "note": "Resized buyer-facing derivative of the accepted raw browser capture."
+    "bytes": 6014,
+    "git_blob_sha1": "bf307b58e34bbcba933bafcbcd0a9e62b51cf673",
+    "note": "Buyer-facing resized derivative of the accepted raw browser capture."
   },
   "optimized_browser": {
     "path": "assets/optimized-browser.jpg",
-    "bytes": 6309,
-    "sha256": "790aec032004313357f76b9df13f4ccbaeecccf562ad90c051e978d8d603c60a",
-    "note": "Resized buyer-facing derivative of the accepted optimized browser capture."
+    "bytes": 6036,
+    "git_blob_sha1": "54ba89ea2cac17c89b9cb72e717ee51c144587c3",
+    "note": "Buyer-facing resized derivative of the accepted optimized browser capture."
   },
   "rejected_browser": {
     "path": "assets/rejected-181kb-browser.jpg",
-    "bytes": 4557,
-    "sha256": "9a056edb38db3041ebb55f169dc37e64184ef8692b17cd6bb26dcd1948a9071c",
-    "note": "Resized buyer-facing derivative of the rejected smaller-candidate browser capture."
+    "bytes": 4243,
+    "git_blob_sha1": "03c5735a624acc03e0f7c2f451390bb88ff7813e",
+    "note": "Buyer-facing resized derivative of the rejected smaller-candidate browser capture."
   }
 }
