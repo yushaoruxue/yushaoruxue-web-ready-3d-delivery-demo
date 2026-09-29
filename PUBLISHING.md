@@ -17,7 +17,7 @@ Verified after publication:
 5. the accepted web-ready GLB is committed and downloadable from the repository;
 6. source-baseline size/hash metadata is frozen in the public manifest;
 7. acceptance/provenance files are present;
-8. GitHub Actions run `36515199131` completed successfully on `main`;
+8. GitHub Actions run `36515546989` completed successfully on `main` after the final README alignment;
 9. CI executed `python tests/verify_evidence.py`;
 10. CI result: **10/10 evidence checks PASS**;
 11. public-repository search found no local Runner path, private infrastructure repository name, Local Execution Fabric name, API-key name, session material, or browser-control implementation.
