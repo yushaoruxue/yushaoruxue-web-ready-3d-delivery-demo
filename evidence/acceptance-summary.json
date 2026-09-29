@@ -1,0 +1,36 @@
+{
+  "raw": {
+    "validator_errors": 0,
+    "validator_warnings": 0,
+    "browser_loaded": true,
+    "capture_ready": true,
+    "model_error": false
+  },
+  "optimized": {
+    "validator_errors": 0,
+    "validator_warnings": 0,
+    "browser_loaded": true,
+    "capture_ready": true,
+    "model_error": false,
+    "required_extensions": [
+      "EXT_meshopt_compression",
+      "KHR_mesh_quantization"
+    ],
+    "validator_boundary": "The validator build reports EXT_meshopt_compression as unsupported for extension-specific validation; runtime evidence closes the selected viewer-stack delivery question."
+  },
+  "visual_review": {
+    "status": "PASS",
+    "preserved": [
+      "mirror-like cap response",
+      "recognizable glass",
+      "visible blue-green liquid",
+      "label plate and three text elements",
+      "no visible geometry loss"
+    ],
+    "pixel_comparison": {
+      "mean_absolute_channel_difference_over_255": 0.034,
+      "rmse_over_255": 0.468,
+      "pixels_any_channel_delta_gt_8_over_255_percent": 0.072
+    }
+  }
+}
