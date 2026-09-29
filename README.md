@@ -20,16 +20,14 @@ The accepted file is **4.04× smaller** while preserving the benchmark's 9/9 nam
 <table>
 <tr><th>Raw browser result</th><th>Accepted optimized browser result</th></tr>
 <tr>
-<td><img src="assets/raw-browser.png" alt="Raw GLB rendered in browser" width="420"></td>
-<td><img src="assets/optimized-browser.png" alt="Optimized GLB rendered in browser" width="420"></td>
+<td><img src="assets/raw-browser.jpg" alt="Raw GLB rendered in browser" width="420"></td>
+<td><img src="assets/optimized-browser.jpg" alt="Optimized GLB rendered in browser" width="420"></td>
 </tr>
 </table>
 
 ## Why the browser check matters
 
 A first optimization candidate reached **181,616 bytes** and also had no validator errors/warnings, but it was **rejected** because the polished metal cap became visibly flatter/greyer in the browser after UV attributes were removed.
-
-<img src="assets/rejected-181kb-browser.png" alt="Rejected smaller candidate with visible cap-material regression" width="420">
 
 So the delivery rule is not "make the file as small as possible." It is:
 
@@ -38,7 +36,7 @@ So the delivery rule is not "make the file as small as possible." It is:
 ## Inspect it in under one minute
 
 1. Compare the two browser screenshots above.
-2. Download the [raw GLB](artifacts/aster-no01-raw.glb) and [accepted web-ready GLB](artifacts/aster-no01-web-ready.glb).
+2. Download the [accepted web-ready GLB](artifacts/aster-no01-web-ready.glb); the source baseline is recorded by exact size/hash in the manifest.
 3. Check the [acceptance evidence](ACCEPTANCE.md).
 4. Inspect the exact size/hash manifest in [evidence/proof-manifest.json](evidence/proof-manifest.json).
 5. Read the [responsibility boundary](#what-this-proves--and-what-it-does-not).
