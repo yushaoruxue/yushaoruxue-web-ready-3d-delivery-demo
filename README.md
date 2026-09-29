@@ -20,14 +20,16 @@ The accepted file is **4.04× smaller** while preserving the benchmark's 9/9 nam
 <table>
 <tr><th>Raw browser result</th><th>Accepted optimized browser result</th></tr>
 <tr>
-<td><img src="assets/raw-browser.jpg" alt="Raw GLB rendered in browser" width="420"></td>
-<td><img src="assets/optimized-browser.jpg" alt="Optimized GLB rendered in browser" width="420"></td>
+<td><img src="assets/raw-browser.jpg" alt="Raw GLB rendered in browser" width="360"></td>
+<td><img src="assets/optimized-browser.jpg" alt="Optimized GLB rendered in browser" width="360"></td>
 </tr>
 </table>
 
-## Why the browser check matters
+## Why browser QA matters
 
 A first optimization candidate reached **181,616 bytes** and also had no validator errors/warnings, but it was **rejected** because the polished metal cap became visibly flatter/greyer in the browser after UV attributes were removed.
+
+<img src="assets/rejected-181kb-browser.jpg" alt="Rejected smaller candidate with visible cap-material regression" width="360">
 
 So the delivery rule is not "make the file as small as possible." It is:
 
@@ -35,11 +37,13 @@ So the delivery rule is not "make the file as small as possible." It is:
 
 ## Inspect it in under one minute
 
-1. Compare the two browser screenshots above.
-2. Download the [accepted web-ready GLB](artifacts/aster-no01-web-ready.glb); the source baseline is recorded by exact size/hash in the manifest.
+1. Compare the real raw and accepted browser captures above.
+2. Compare the rejected smaller candidate.
 3. Check the [acceptance evidence](ACCEPTANCE.md).
-4. Inspect the exact size/hash manifest in [evidence/proof-manifest.json](evidence/proof-manifest.json).
+4. Inspect the frozen GLB size/hash evidence in [evidence/proof-manifest.json](evidence/proof-manifest.json).
 5. Read the [responsibility boundary](#what-this-proves--and-what-it-does-not).
+
+The binary GLBs are not duplicated into this buyer-facing repository. Their exact frozen byte sizes and SHA-256 hashes are retained as provenance evidence; this repository is an evidence surface, not a mirror of the private production workspace.
 
 ## What was done
 
@@ -51,7 +55,7 @@ existing raw GLB
 → Meshopt high with bounded quantization
 → preserve UV attributes
 → validate
-→ load with pinned local Meshopt decoder
+→ load with compatible Meshopt decoder
 → fixed-camera raw/optimized browser capture
 → manual visual comparison
 → accept
@@ -110,7 +114,7 @@ It does **not** claim:
 
 The **75.24%** reduction is benchmark evidence for this asset, not a universal promise.
 
-## Reproduce the committed evidence check
+## Reproduce the public evidence check
 
 Python 3, standard library only:
 
@@ -124,6 +128,6 @@ Expected final line:
 10/10 evidence checks PASS
 ```
 
-This script verifies the committed artifacts, hashes, sizes, and evidence metadata. It does not pretend to replace the original browser/manual visual acceptance.
+This script verifies the public visual evidence bytes and the committed frozen acceptance metadata. It does not pretend to rerun the original GLB transform, browser session, or human visual review.
 
-See [PROVENANCE.md](PROVENANCE.md) for the source evidence and why this benchmark is safe to publish.
+See [PROVENANCE.md](PROVENANCE.md) for the source-evidence boundary.
