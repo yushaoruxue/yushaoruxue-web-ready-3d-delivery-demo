@@ -2,11 +2,16 @@
   "classification": "Synthetic internal benchmark, not a client case.",
   "source_asset": {
     "bytes": 1091916,
-    "sha256": "e30e4c13d8be5516e8437080d05b46a3c51bfc4fea06233f19e7723443c79a1f"
+    "sha256": "e30e4c13d8be5516e8437080d05b46a3c51bfc4fea06233f19e7723443c79a1f",
+    "publication_note": "The source baseline is recorded by exact metadata and browser screenshot; the accepted delivery GLB is the downloadable binary in this public proof."
   },
   "accepted_web_asset": {
     "bytes": 270360,
     "sha256": "26671ceecd1fb678a7382d0d73d35c018fda15bc331b5b29afd2c0e41f52c0cd"
+  },
+  "public_images": {
+    "raw_browser_jpg_sha256": "e62cbd1ea987ee91594125b34d56e4bd749151d82473842770141bddad3db1e4",
+    "optimized_browser_jpg_sha256": "755910718b98ebcb0ad805b08b77e31adde47d64a7bbaca5c0caf8978b424e5a"
   },
   "rejected_smaller_candidate": {
     "bytes": 181616,
