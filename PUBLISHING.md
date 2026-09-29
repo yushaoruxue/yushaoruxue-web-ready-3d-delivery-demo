@@ -1,32 +1,35 @@
 # Publication Gate
 
-## Standalone repository
-
-`yushaoruxue-web-ready-3d-delivery-demo`
-
 ## Current status
 
-**PUBLIC / BUYER-SENDABLE — publication verification pending only on current CI run.**
+**PUBLIC / BUYER-SENDABLE — verified 2026-09-29**
 
-Publication surface now contains:
+Public entry:
 
-- public buyer-facing README;
-- real raw and accepted browser screenshots;
-- downloadable accepted web-ready GLB;
-- frozen source-baseline size/hash metadata;
-- acceptance and provenance evidence;
-- reproducible 10-check integrity test.
+https://github.com/yushaoruxue/yushaoruxue-web-ready-3d-delivery-demo
 
-Required final checks:
+Verified after publication:
 
-1. repository visibility is public;
-2. root README renders without authentication;
-3. raw and optimized browser screenshots render;
-4. accepted optimized GLB is downloadable;
-5. acceptance/provenance files are publicly readable;
-6. `python tests/verify_evidence.py` reports `10/10 evidence checks PASS`;
-7. no private execution infrastructure, local build path, credential, session, or private repository implementation is exposed;
-8. the synthetic/internal label and current responsibility boundary are visible;
-9. the public URL is written back to the commercial proof registry.
+1. repository metadata reports public visibility;
+2. root buyer-facing README is present;
+3. real raw and optimized browser screenshots are committed and referenced from the README;
+4. the rejected visual-regression screenshot is committed;
+5. the accepted web-ready GLB is committed and downloadable from the repository;
+6. source-baseline size/hash metadata is frozen in the public manifest;
+7. acceptance/provenance files are present;
+8. GitHub Actions run `36515199131` completed successfully on `main`;
+9. CI executed `python tests/verify_evidence.py`;
+10. CI result: **10/10 evidence checks PASS**;
+11. public-repository search found no local Runner path, private infrastructure repository name, Local Execution Fabric name, API-key name, session material, or browser-control implementation.
 
-The source GLB itself is not duplicated into the public proof; its exact size/hash and browser baseline are preserved, while the accepted delivery GLB is published directly.
+## Evidence boundary
+
+This is a synthetic/internal benchmark, not a client case.
+
+The source GLB itself is not duplicated in the public repository. Its exact size/hash and real browser baseline are preserved; the accepted delivery GLB is published directly.
+
+Supported responsibility:
+
+> existing usable GLB/glTF → inspect → bounded optimization → structural validation → target-browser QA → manual visual comparison → accepted delivery artifact + evidence.
+
+Not established: from-scratch/reference modeling, arbitrary damaged-asset repair, major retopology/UV reconstruction, animation/rigging, arbitrary source formats, full Three.js configurator, ecommerce integration, production deployment ownership, or a universal percentage reduction.
