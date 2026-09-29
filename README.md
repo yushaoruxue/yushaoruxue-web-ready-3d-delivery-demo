@@ -43,7 +43,7 @@ So the delivery rule is not "make the file as small as possible." It is:
 4. Inspect the frozen GLB size/hash evidence in [evidence/proof-manifest.json](evidence/proof-manifest.json).
 5. Read the [responsibility boundary](#what-this-proves--and-what-it-does-not).
 
-The binary GLBs are not duplicated into this buyer-facing repository. Their exact frozen byte sizes and SHA-256 hashes are retained as provenance evidence; this repository is an evidence surface, not a mirror of the private production workspace.
+The accepted web-ready GLB is published directly at [`artifacts/aster-no01-web-ready.glb`](artifacts/aster-no01-web-ready.glb). The source GLB itself is not duplicated here; its exact frozen byte size/SHA-256 plus the real raw-browser baseline are retained as provenance evidence. This repository is a buyer-facing evidence surface, not a mirror of the private production workspace.
 
 ## What was done
 
@@ -128,6 +128,6 @@ Expected final line:
 10/10 evidence checks PASS
 ```
 
-This script verifies the public visual evidence bytes and the committed frozen acceptance metadata. It does not pretend to rerun the original GLB transform, browser session, or human visual review.
+This script verifies that the accepted public GLB exists, matches the frozen accepted size/SHA-256, that the public browser evidence exists, and that the frozen validator/browser/manual-acceptance metadata remains intact. It does not pretend to rerun the original transform, browser session, or human visual review.
 
 See [PROVENANCE.md](PROVENANCE.md) for the source-evidence boundary.
