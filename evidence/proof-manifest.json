@@ -9,10 +9,6 @@
     "bytes": 270360,
     "sha256": "26671ceecd1fb678a7382d0d73d35c018fda15bc331b5b29afd2c0e41f52c0cd"
   },
-  "public_images": {
-    "raw_browser_jpg_sha256": "e62cbd1ea987ee91594125b34d56e4bd749151d82473842770141bddad3db1e4",
-    "optimized_browser_jpg_sha256": "755910718b98ebcb0ad805b08b77e31adde47d64a7bbaca5c0caf8978b424e5a"
-  },
   "rejected_smaller_candidate": {
     "bytes": 181616,
     "reason": "Browser visual regression: polished metal cap became materially flatter/greyer after UV attributes were removed."
