@@ -1,0 +1,23 @@
+name: bootstrap-write-test
+
+on:
+  push:
+    paths:
+      - bootstrap/READY
+
+permissions:
+  contents: write
+
+jobs:
+  test-write:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Verify repository write permission
+        run: |
+          echo "bootstrap write verified" > bootstrap-write-ok.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bootstrap-write-ok.txt
+          git commit -m "chore: verify bootstrap write permission"
+          git push
