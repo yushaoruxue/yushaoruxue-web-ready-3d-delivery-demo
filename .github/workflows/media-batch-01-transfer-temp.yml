@@ -1,0 +1,21 @@
+name: media-batch-01-transfer
+on:
+  push:
+    branches:
+      - temp/media-batch-01-transfer-20261003
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: p3-browser-evidence
+          path: |
+            assets/raw-browser.jpg
+            assets/optimized-browser.jpg
+            assets/rejected-181kb-browser.jpg
+            evidence/proof-manifest.json
+          if-no-files-found: error
+          retention-days: 1
